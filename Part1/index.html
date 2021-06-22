@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datetime superapp</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./src/index.js" type="module" defer></script>
+    <script nomodule>
+        alert("Ваш браузер не поддерживает систему модулей");
+    </script>
+</head>
+
+<body>
+    <div id="menu" class="menu">
+        <button class="button pageDates pushed">Калькулятор дат</button>
+        <button class="button pageTimer">Таймер</button>
+    </div>
+    <div class="main">
+        <form id="datecalc" class="datecalc">
+            <h3>Калькулятор дат</h3>
+            <label>
+                <strong>Первая дата:</strong>
+                <input type="date" name="firstDate"/>
+            </label>
+            <label>
+                <strong>Вторая дата:</strong>
+                <input type="date" name="secondDate"/>
+            </label>
+            <button type="submit" class="button">Расчитать промежуток</button>
+            <p class="error" id="datecalc__result"></p>
+        </form>
+
+        <form id="timer" class="timer invisible">
+            <h3>Таймер</h3>
+            <label>
+                <strong>Время таймера:</strong>
+                <input class="input" type="number" max="24" min="0" value="0" name="timerSetHour">&nbsp;ч&ensp;
+                <input class="input" type="number" max="59" min="0" value="0" name="timerSetMin">&nbsp;мин&ensp;
+                <input class="input" type="number" max="59" min="0" value="0" name="timerSetSec">&nbsp;cек
+            </label>
+            <button class="button" type="submit">Старт</button>
+            <button class="button" type="button" id="pause">Пауза</button>
+            <button class="button" type="reset" id="reset">Сброс</button>
+            <p class="error" id="time__error"></p>
+        </form>
+    </div>
+</body>
+
+</html>

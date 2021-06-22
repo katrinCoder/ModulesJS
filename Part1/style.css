@@ -1,0 +1,43 @@
+.menu {
+    height: 60px;
+    background-color: darkslateblue;
+    display: flex;
+    justify-content: center;
+}
+.button {
+    height: 30px;
+    width: 200px;
+    margin-top: 15px;
+    margin-right: 50px;
+    color: Indigo;
+}
+.pushed {
+    background-color: darkgrey;
+    color: Lavender;
+}
+
+.main {
+    display: flex;
+    height: 100%;
+    background-color:cornflowerblue;
+    justify-content: center;
+}
+.datecalc, .timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input {
+    width: 40px;
+}
+.error {
+    background-color: white;
+}
+.invisible {
+    visibility: hidden;
+    height: 0px;
+    width: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
